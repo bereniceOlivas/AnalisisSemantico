@@ -1,0 +1,38 @@
+package AutomatasII
+{
+	public static void Main() 
+	{
+            
+            string nombre= "Jose";
+            nombre = "Mari";
+            nombre = 12;
+
+            char faght = 'H';           
+            dec decim = 10.5;
+            decim = 1;
+            ciudad = "Norte";
+
+            int Num; 
+            Num = 100;
+            int Num2 = Num;
+            int Cars = "Jose";
+            Valor = "Declaracion";
+	
+            string caden = "dias"; 
+            string caden2 = "COPY"; 
+            string caden3 = "Agua"; 
+            string nombre = "paul";
+
+            for(int x=0; x<10; x++)
+            {
+                if ( Num == 58 ){
+                    caden = caden2; 		 
+                    int n1 = 400;
+                    char caract = 'M';
+                    char c = "82"; 
+            }
+
+            int sapo = caden;
+        }
+    }
+}
