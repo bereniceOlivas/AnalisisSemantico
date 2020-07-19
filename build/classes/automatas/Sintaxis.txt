@@ -33,6 +33,7 @@ package AutomatasII
             }
 
             int sapo = caden;
+            funtion;
         }
     }
 }
