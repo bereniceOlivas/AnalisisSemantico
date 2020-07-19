@@ -32,8 +32,12 @@ package AutomatasII
                     char c = "82"; 
             }
 
-            int sapo = caden;
-            funtion;
+            int Num1 = 10;
+            int Num2 = 92;
+            int Num3 = 89;
+            int Num4 = 78;
+            int Num5 = 50;    
+            int Num6 = 15;
         }
     }
 }
