@@ -261,4 +261,9 @@ class AnalisisSemantico {
             return "Error: El identificador " + checkTok.image + " No ha sido declarado \r\nLinea: " + checkTok.beginLine;
         }
     }
+    
+    public static void CodigoIntermedio()
+		{
+			AnalisisCodigoIntermedio.Inicio(tablaDeSimbolos, limiteDeTabla);
+		}
 }
