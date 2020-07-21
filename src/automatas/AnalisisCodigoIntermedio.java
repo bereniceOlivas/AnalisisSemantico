@@ -30,14 +30,11 @@ public class AnalisisCodigoIntermedio {
         Inicializacion();
         InsercionVariablesValores(FuncionDiv, Datos, ContadorGlobal);
         InicializacionTriplos();
-
         //ImpresionTablaValores();
-        //System.out.println();
         ImpresionFuncionDiv(FuncionDiv);
-        System.out.println();
         ProcesoTriplos(FuncionDiv, DatosNivel1);
         ImpresionTriplos();
-        System.out.println();
+        
       
     }
 
@@ -650,13 +647,13 @@ public class AnalisisCodigoIntermedio {
         System.out.println("\nTabla de resultado           ");
         String Idenficicador = null;
         System.out.println();
-        System.out.println("\tIdetificador\t\tValor 1 \tOperador\tValor 2\t\tResultado ");
+        System.out.println("\tIdetificador\t \tArg 1\t\tOperador\tArg 2\t\tResultado ");
         for (int x = 0; x < 10; x++) {
             Idenficicador = DatosNivel1[x].getValor1();
             boolean notEqual = !Idenficicador.equals("0");
 
             if (notEqual == true) {
-                System.out.println("Paso"+(x+1)+"\t   " + DatosNivel1[x].getIdentificador() + "\t\t " + DatosNivel1[x].getValor1() + "\t\t" + DatosNivel1[x].getOperacion() + "\t\t" + DatosNivel1[x].getValor2() + "\t\t" + df.format(DatosNivel1[x].getResultado()));
+                System.out.println("Paso"+(x+1)+"\t   " + DatosNivel1[x].getIdentificador() + "\t=\t " + DatosNivel1[x].getValor1() + "\t\t" + DatosNivel1[x].getOperacion() + "\t\t" + DatosNivel1[x].getValor2() + "\t\t" + df.format(DatosNivel1[x].getResultado()));
             }
         }
 
