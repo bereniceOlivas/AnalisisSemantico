@@ -564,16 +564,16 @@ public class AnalisisCodigoIntermedio {
 
     public static void InicializacionTriplos() {
 
-        DatosNivel1[0] = new TablaDeResultadoCodigoIntermedio("Arg1", "0", "0", "0", 0);
-        DatosNivel1[1] = new TablaDeResultadoCodigoIntermedio("Arg2", "0", "0", "0", 0);
-        DatosNivel1[2] = new TablaDeResultadoCodigoIntermedio("Arg3", "0", "0", "0", 0);
-        DatosNivel1[3] = new TablaDeResultadoCodigoIntermedio("Arg4", "0", "0", "0", 0);
-        DatosNivel1[4] = new TablaDeResultadoCodigoIntermedio("Arg5", "0", "0", "0", 0);
-        DatosNivel1[5] = new TablaDeResultadoCodigoIntermedio("Arg6", "0", "0", "0", 0);
-        DatosNivel1[6] = new TablaDeResultadoCodigoIntermedio("Arg7", "0", "0", "0", 0);
-        DatosNivel1[7] = new TablaDeResultadoCodigoIntermedio("Arg8", "0", "0", "0", 0);
-        DatosNivel1[8] = new TablaDeResultadoCodigoIntermedio("Arg9", "0", "0", "0", 0);
-        DatosNivel1[9] = new TablaDeResultadoCodigoIntermedio("Arg0", "0", "0", "0", 0);
+        DatosNivel1[0] = new TablaDeResultadoCodigoIntermedio("Resul1", "0", "0", "0", 0);
+        DatosNivel1[1] = new TablaDeResultadoCodigoIntermedio("Resul2", "0", "0", "0", 0);
+        DatosNivel1[2] = new TablaDeResultadoCodigoIntermedio("Resul3", "0", "0", "0", 0);
+        DatosNivel1[3] = new TablaDeResultadoCodigoIntermedio("Resul4", "0", "0", "0", 0);
+        DatosNivel1[4] = new TablaDeResultadoCodigoIntermedio("Resul5", "0", "0", "0", 0);
+        DatosNivel1[5] = new TablaDeResultadoCodigoIntermedio("Resul6", "0", "0", "0", 0);
+        DatosNivel1[6] = new TablaDeResultadoCodigoIntermedio("Resul7", "0", "0", "0", 0);
+        DatosNivel1[7] = new TablaDeResultadoCodigoIntermedio("Resul8", "0", "0", "0", 0);
+        DatosNivel1[8] = new TablaDeResultadoCodigoIntermedio("Resul9", "0", "0", "0", 0);
+        DatosNivel1[9] = new TablaDeResultadoCodigoIntermedio("Resul0", "0", "0", "0", 0);
 
         /*for(int x=0; x < 10; x++)
 			{
@@ -622,7 +622,7 @@ public class AnalisisCodigoIntermedio {
         System.out.println("Descomposicion de la Funcion");
         System.out.println();
         for (int x = 0; x < FuncionDiv.length; x++) {
-            System.out.println(x + " = " + FuncionDiv[x]);
+            System.out.println(x+1 + " -> " + FuncionDiv[x]);
         }
         System.out.println();
     }
@@ -650,13 +650,13 @@ public class AnalisisCodigoIntermedio {
         System.out.println("\nTabla de resultado           ");
         String Idenficicador = null;
         System.out.println();
-        System.out.println("Idetificador\tValor 1 \tOperador\tValor 2\t\tResultado ");
+        System.out.println("\tIdetificador\t\tValor 1 \tOperador\tValor 2\t\tResultado ");
         for (int x = 0; x < 10; x++) {
             Idenficicador = DatosNivel1[x].getValor1();
             boolean notEqual = !Idenficicador.equals("0");
 
             if (notEqual == true) {
-                System.out.println("   " + DatosNivel1[x].getIdentificador() + "\t\t " + DatosNivel1[x].getValor1() + "\t\t" + DatosNivel1[x].getOperacion() + "\t\t" + DatosNivel1[x].getValor2() + "\t\t" + df.format(DatosNivel1[x].getResultado()));
+                System.out.println("Paso"+(x+1)+"\t   " + DatosNivel1[x].getIdentificador() + "\t\t " + DatosNivel1[x].getValor1() + "\t\t" + DatosNivel1[x].getOperacion() + "\t\t" + DatosNivel1[x].getValor2() + "\t\t" + df.format(DatosNivel1[x].getResultado()));
             }
         }
 
