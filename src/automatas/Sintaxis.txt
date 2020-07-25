@@ -31,7 +31,7 @@ package AutomatasII
                     char caract = 'M';
                     char c = "82"; 
             }
-
+            int A = 0;
             int Num1 = 10;
             int Num2 = 92;
             int Num3 = 89;
