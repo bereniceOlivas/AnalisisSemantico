@@ -33,11 +33,11 @@ package AutomatasII
             }
             int A = 0;
             int Num1 = 10;
-            int Num2 = 92;
-            int Num3 = 89;
-            int Num4 = 78;
-            int Num5 = 50;    
-            int Num6 = 15;
+            int Num2 = 220;
+            int Num3 = 290;
+            int Num4 = 6;
+            int Num5 = 200;    
+            int Num6 = 10;
         }
     }
 }
