@@ -13,13 +13,19 @@ class Compilacion implements CompilacionConstants {
         try {
             Compilacion analizador = new Compilacion(new FileInputStream("src/automatas/Sintaxis.txt"));
             analizador.Programa();
+            System.out.println("\n");
             AnalisisSemantico.TablaSimbolos();
 
-            System.out.println();
+            System.out.println("\n");
             AnalisisSemantico.TablaDeErrores();
 
             System.out.println();
-            System.out.println("Analizador Semantico concluido.");
+            System.out.println("Analizador Semantico concluido. \n");
+            
+            AnalisisSemantico.CodigoIntermedio();//Num1 * Num4 + ( Num2 - Num1 / Num5 ) / Num6 
+            System.out.println();
+            System.out.println("Analizador de codigo intermedio concluido. \n");
+
 
         } catch (ParseException e) {
             System.out.println("\u001B[31mA ocurrio un error sintatico no controlado, analisis semantico finalizado");
