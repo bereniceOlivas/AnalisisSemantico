@@ -620,7 +620,7 @@ public class AnalisisCodigoIntermedio {
         String Idenficicador = null;
         System.out.println();
         System.out.println("");
-        System.out.println("------------->  Tabla de valores de la expresion    ");
+        System.out.println("Tabla de valores de la expresion    ");
         System.out.println();
         System.out.println("N Variable \t Valor");
         for (int b = 0; b < ValorVariable.length; b++) {
